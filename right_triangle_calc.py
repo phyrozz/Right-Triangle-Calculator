@@ -12,7 +12,7 @@ def find_leg():
 			print("Note: A triangle with a length of the leg greater than or equal that of the hypotenuse doesn't exist!\n")
 			find_leg()
 	
-		leg_squared = (hyp * hyp) - (leg * leg)
+		leg_squared = (hyp ** 2) - (leg ** 2)
 		leg_final = round(sqrt(leg_squared), 5)
 
 		if (leg <= 0 or hyp <= 0):
@@ -29,7 +29,7 @@ def find_hyp():
 	leg_one = int(input("Enter the length of the first leg: "))
 	leg_two = int(input("Enter the length of the second leg: "))
 	
-	hyp_squared = (leg_one * leg_one) + (leg_two * leg_two)
+	hyp_squared = (leg_one ** 2) + (leg_two ** 2)
 	hyp_final = round(sqrt(hyp_squared), 5)
 	
 	if (leg_one <= 0 or leg_two <= 0):
